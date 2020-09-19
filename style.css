@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.star {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.1s linear;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    box-shadow: 0;
+    transform: translate(2px, 2px);
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
