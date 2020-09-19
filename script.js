@@ -21,4 +21,4 @@ window.setInterval(function(){
     $("#btn").on("click",createStar);
 
   });
- },300);
+ },3000);
